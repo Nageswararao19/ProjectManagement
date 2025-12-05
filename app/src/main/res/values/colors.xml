@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="primary_color">#7259E4</color>
+    <color name="primary_color1">#041E63</color>
+
+
+    <!-- Brand Colors -->
+    <color name="purple_500">#6200EE</color>
+    <color name="purple_700">#3700B3</color>
+    <color name="teal_200">#03DAC5</color>
+    <color name="teal_700">#018786</color>
+
+    <!-- App Specific Colors (Day) -->
+    <color name="bg_app_day">#C2D1ED</color>
+    <color name="surface_card_day">#CCFFFFFF</color> <!-- 80% White -->
+    <color name="text_primary_day">#1E293B</color>
+    <color name="text_secondary_day">#64748B</color>
+    <color name="text_third_day">#E2E6ED</color>
+
+    <!-- App Specific Colors (Night) -->
+    <color name="bg_app_night">#0F172A</color>
+    <color name="surface_card_night">#CC1E293B</color> <!-- 80% Slate-900 -->
+    <color name="text_primary_night">#F8FAFC</color>
+    <color name="text_secondary_night">#94A3B8</color>
+
+    <!-- Status Colors -->
+    <color name="status_emerald_bg">#D1FAE5</color>
+    <color name="status_emerald_text">#059669</color>
+    <color name="status_blue_bg">#DBEAFE</color>
+    <color name="status_blue_text">#2563EB</color>
+    <color name="status_purple_bg">#F3E8FF</color>
+    <color name="status_purple_text">#9333EA</color>
+    <color name="status_orange_text">#FF5533</color>
+    <color name="status_orange_bg">#FFC3B8</color>
+</resources>

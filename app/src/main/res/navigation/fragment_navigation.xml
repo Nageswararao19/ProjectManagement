@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_navigation"
+    app:startDestination="@id/projectsFragment">
+
+    <fragment
+        android:id="@+id/projectsFragment"
+        android:name="com.nagesh.projectmanagement.ui.fragment.ProjectsFragment"
+        android:label="fragment_projects"
+        tools:layout="@layout/fragment_projects">
+        <action
+            android:id="@+id/action_projectsFragment_to_tasksFragment"
+            app:destination="@id/tasksFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/tasksFragment"
+        android:name="com.nagesh.projectmanagement.ui.fragment.TasksFragment"
+        android:label="fragment_tasks"
+        tools:layout="@layout/fragment_tasks" >
+        <argument
+            android:name="project"
+            app:argType="com.nagesh.projectmanagement.models.Project" />
+    </fragment>
+
+
+</navigation>

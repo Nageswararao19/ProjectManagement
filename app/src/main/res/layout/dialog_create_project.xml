@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/status_blue_bg"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="New project"
+        android:textColor="@color/text_primary_day"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Project name"
+        android:textColor="@color/text_primary_day"
+        android:textStyle="bold" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/etProjectName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/bg_status_badge"
+        android:backgroundTint="@color/white"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="12dp"
+        android:textColorHint="@color/black" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Description"
+        android:textColor="@color/text_primary_day"
+        android:textStyle="bold" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/etProjectDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/bg_status_badge"
+        android:backgroundTint="@color/white"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="12dp"
+        android:textColorHint="@color/black" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Start date"
+                android:textColor="@color/text_primary_day"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etStartDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/bg_status_badge"
+                android:backgroundTint="@color/white"
+                android:focusable="false"
+                android:hint="ex: (yyyy-mm-dd)"
+                android:minHeight="38dp"
+                android:padding="12dp"
+                android:textColorHint="@color/black" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="End date"
+                android:textStyle="bold"
+                android:textColor="@color/text_primary_day"/>
+
+            <EditText
+                android:id="@+id/etEndDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/bg_status_badge"
+                android:backgroundTint="@color/white"
+                android:focusable="false"
+                android:hint="ex: (yyyy-mm-dd)"
+                android:minHeight="38dp"
+                android:padding="12dp"
+                android:textColorHint="@color/black" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Project status"
+        android:layout_marginTop="12dp"
+        android:textStyle="bold"
+        android:textColor="@color/text_primary_day"/>
+
+    <AutoCompleteTextView
+        android:id="@+id/actProjectStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_status_badge"
+        android:backgroundTint="@color/white"
+        android:focusable="false"
+        android:paddingVertical="13dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="0dp"
+        android:text="-- Select status --" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginTop="20dp">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:minHeight="38dp"
+            android:padding="0dp"
+            android:text="CANCEL"
+            android:textColor="@color/status_orange_text"
+            app:cornerRadius="10dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnCreate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="38dp"
+            android:padding="0dp"
+            android:text="CREATE"
+            android:textColor="@color/status_emerald_text"
+            app:cornerRadius="10dp" />
+    </LinearLayout>
+
+</LinearLayout>
